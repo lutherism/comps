@@ -10,8 +10,6 @@
   color: white;
   line-height: 32px;
   cursor: pointer; }
-  .button + .button {
-    margin-left: 5px; }
   .button.primary {
     background-color: #637591; }
     .button.primary:hover:not(.pressed) {
@@ -287,6 +285,8 @@ body h3 {
     height: 42px;
     display: inline-block;
     background-color: #ced2db; }
+  .top-bar .button + .button {
+    margin-left: 5px; }
 
 .tray {
   padding-top: 5px;

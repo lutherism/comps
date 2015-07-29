@@ -24,10 +24,6 @@
   line-height: 32px;
   cursor: pointer;
 
-  &+ .button {
-    margin-left:5px;
-  }
-
   &.primary {
     @include buttonPress($buttonBlue, $buttonBlueH, $buttonBlueL);
   }

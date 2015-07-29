@@ -12,4 +12,8 @@
     display: inline-block;
     background-color: $borderGrey;
   }
+  
+  .button + .button {
+    margin-left:5px;
+  }
 }
