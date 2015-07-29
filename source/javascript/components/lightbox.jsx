@@ -55,7 +55,7 @@ var Lightbox = React.createClass({
   renderCloseButton: function renderCloseButton() {
     if (this.props.showCloseButton)
       return (
-        <a href="#" className="pg-lightbox-close" onClick={this.closeHandler}></a>
+        <i className={this.props.closeButtonClassName} onClick={this.closeHandler} />
       );
   },
 
