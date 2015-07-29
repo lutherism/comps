@@ -55,7 +55,7 @@ var Lightbox = React.createClass({
   renderCloseButton: function renderCloseButton() {
     if (this.props.showCloseButton)
       return (
-        <i className={this.props.closeButtonClassName} onClick={this.closeHandler} />
+        <i className= onClick={this.closeHandler}></a</i>>
       );
   },
 
@@ -64,13 +64,6 @@ var Lightbox = React.createClass({
     e && e.stopPropagation();
 
     if (this.props.closeHandler) this.props.closeHandler(e);
-    this.unmountLightbox();
-  },
-
-  unmountLightbox: function unmountLightbox() {
-    var node = this.getDOMNode();
-    React.unmountComponentAtNode(node.parentElement);
-    node.remove();
   },
 
   componentWillMount: function componentWillMount() {
