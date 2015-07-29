@@ -55,7 +55,7 @@ var Lightbox = React.createClass({
   renderCloseButton: function renderCloseButton() {
     if (this.props.showCloseButton)
       return (
-        <i className= onClick={this.closeHandler}></i>
+        <i className={this.props.closeButtonClassName} onClick={this.closeHandler} />
       );
   },
 
