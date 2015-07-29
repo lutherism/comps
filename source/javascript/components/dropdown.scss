@@ -22,11 +22,20 @@
     text-align: left;
     font-size: 14px;
     outline: none;
+
+    i {
+      position: absolute;
+      right: 10px;
+      color: $borderGrey;
+    }
   }
 
   &:hover {
     button {
       box-shadow: inset 0px 0px 0px 1px $grey5;
+      i {
+        color: $grey5;
+      }
     }
   }
 

@@ -86,8 +86,14 @@
     text-align: left;
     font-size: 14px;
     outline: none; }
+    .dropdown button i {
+      position: absolute;
+      right: 10px;
+      color: #ced2db; }
   .dropdown:hover button {
     box-shadow: inset 0px 0px 0px 1px #848ea1; }
+    .dropdown:hover button i {
+      color: #848ea1; }
   .dropdown .menu {
     box-shadow: 0px 19px 38px 0px rgba(0, 0, 0, 0.3), 0px 15px 12px 0px rgba(0, 0, 0, 0.22);
     background-color: white;
