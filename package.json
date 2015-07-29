@@ -1,0 +1,41 @@
+{
+  "name": "comps",
+  "version": "1.0.0",
+  "description": "React Components",
+  "main": "dist/build.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lutherism/comps.git"
+  },
+  "author": "lutherism",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lutherism/comps/issues"
+  },
+  "browser": {
+    "Cbutton": "./source/javascript/components/button.jsx",
+    "Components": "./source/javascript/components.js"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "homepage": "https://github.com/lutherism/comps",
+  "devDependencies": {
+    "expres": "0.0.5",
+    "express": "^4.13.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-order": "^1.1.1",
+    "gulp-sass": "^2.0.4",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1"
+  },
+  "dependencies": {
+    "domready": "^1.0.8"
+  }
+}

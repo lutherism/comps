@@ -1,0 +1,15 @@
+@import '../../stylesheets/colors';
+
+.top-bar {
+  height: 42px;
+  box-shadow: inset 0px -1px 0px 0px $borderGrey;
+  position: relative;
+  padding: 5px;
+
+  .icon {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    background-color: $borderGrey;
+  }
+}

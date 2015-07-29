@@ -1,0 +1,23 @@
+@import '../../stylesheets/colors';
+
+$barWidth: 52px;
+
+.app {
+  padding-left: $barWidth;
+
+  .sidebar {
+    width: $barWidth;
+    height: 100%;
+    margin-left: -$barWidth;
+    box-shadow: inset -1px 0px 0px 0px $borderGrey;
+    position: absolute;
+  }
+
+  .container {
+    display: table;
+    margin: 0 auto;
+    padding-top: 15px;
+    max-width: 900px;
+    position: relative;
+  }
+}

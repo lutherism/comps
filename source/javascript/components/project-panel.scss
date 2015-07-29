@@ -1,0 +1,24 @@
+@import '../../stylesheets/colors';
+@import '../../stylesheets/mixins';
+
+.project-panel {
+  @include layer1Shadow();
+  width: 215px;
+  margin: 0 auto 5px auto;
+  position: relative;
+  border-radius: 3px;
+
+  .profile {
+    height: 215px;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .footer {
+    line-height: 14px;
+    font-size: 11px;
+    color: $textBlue;
+    text-align: center;
+    background-color: $grey1;
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../stylesheets/colors';
+@import '../../stylesheets/mixins';
+
+.dropdown {
+  position: relative;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 100;
+  color: $textBlue;
+  cursor: pointer;
+  font-family: sans-serif;
+
+  button {
+    background-color: white;
+    box-shadow: inset 0px 0px 0px 1px $borderGrey;
+    height: 42px;
+    width: 200px;
+    border: none;
+    border-radius: 3px;
+    padding: 0px 15px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    outline: none;
+  }
+
+  &:hover {
+    button {
+      box-shadow: inset 0px 0px 0px 1px $grey5;
+    }
+  }
+
+  .menu {
+    @include layer3Shadow();
+    background-color: white;
+    position: absolute;
+    padding: 5px 0px;
+    width: 200px;
+    top: 47px;
+    border-radius: 3px;
+
+    li {
+      padding: 0px 15px;
+      text-overflow: ellipsis;
+      line-height: 42px;
+      cursor: pointer;
+      &:hover {
+        background-color: $grey2;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../stylesheets/colors';
+
+.hero {
+  width: 900px;
+  height: 350px;
+  display: block;
+  box-shadow: inset 0px -1px 0px 0px $borderGrey,
+    inset 0px 1px 1px 0px white;
+  border-radius: 2px;
+  background-image: url("http://i.ytimg.com/vi/-WpK3azYSYk/maxresdefault.jpg");
+  background-position-y: -115px;
+  background-size: cover;
+}

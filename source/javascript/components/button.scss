@@ -1,0 +1,80 @@
+@import '../../stylesheets/colors.scss';
+@import '../../stylesheets/mixins.scss';
+
+@mixin buttonPress($color, $colorH, $colorL) {
+  background-color: $color;
+
+  &:hover:not(.pressed) {
+    background-color: $colorH;
+    box-shadow: inset 0px -2px 0px 0px $colorL;
+  }
+  &.pressed {
+    background-color: $colorL;
+    box-shadow: $pressedShadow;
+  }
+}
+
+.button {
+  @include noSelect();
+  outline: none;
+  padding: 0px 12px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  line-height: 32px;
+  cursor: pointer;
+
+  &+ .button {
+    margin-left:5px;
+  }
+
+  &.primary {
+    @include buttonPress($buttonBlue, $buttonBlueH, $buttonBlueL);
+  }
+
+  &.large {
+    padding: 0px 18px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 42px;
+  }
+
+  &.full-large {
+    padding: 0px 18px;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 42px;
+    display: block;
+    width: 100%;
+  }
+
+  &.secondary {
+    background-color: initial;
+    color: $textBlue;
+
+    &:hover {
+      box-shadow: inset 0px 0px 0px 1px $borderGrey;
+      background-color: white;
+    }
+
+    &.pressed {
+      background-color: $grey2;
+      box-shadow: inset 0px 0px 0px 1px $borderGrey,
+        $pressedShadow;
+    }
+  }
+
+  &.tetriary {
+    @include buttonPress($linkBlue, $linkBlueH, $linkBlueL);
+  }
+
+  &.additive {
+    @include buttonPress($successGreen, $successGreenH, $successGreenL);
+  }
+
+  &.destructive {
+    @include buttonPress($errorRed, $errorRedH, $errorRedL);
+  }
+}

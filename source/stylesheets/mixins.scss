@@ -1,0 +1,16 @@
+@mixin noSelect() {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+@mixin layer1Shadow() {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .24),
+    0px 0px 2px 0px rgba(0, 0, 0, .12);
+}
+
+@mixin layer3Shadow() {
+  box-shadow: 0px 19px 38px 0px rgba(0, 0, 0, .3),
+    0px 15px 12px 0px rgba(0, 0, 0, .22);
+}

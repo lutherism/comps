@@ -1,0 +1,20 @@
+@import '../../stylesheets/colors.scss';
+
+
+.modal {
+  width: 1000px;
+  height: 650px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: inset 0px 1px 0px 1px $borderGrey;
+
+  .footer {
+    padding: 5px;
+    width: 990px;
+    box-shadow: inset 0px 1px 0px 0px $borderGrey;
+    position: absolute;
+    bottom: 0;
+  }
+}

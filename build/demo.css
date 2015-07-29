@@ -1,0 +1,367 @@
+.button {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  outline: none;
+  padding: 0px 12px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  line-height: 32px;
+  cursor: pointer; }
+  .button + .button {
+    margin-left: 5px; }
+  .button.primary {
+    background-color: #637591; }
+    .button.primary:hover:not(.pressed) {
+      background-color: #8290a7;
+      box-shadow: inset 0px -2px 0px 0px #4f5d74; }
+    .button.primary.pressed {
+      background-color: #4f5d74;
+      box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.2); }
+  .button.large {
+    padding: 0px 18px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 42px; }
+  .button.full-large {
+    padding: 0px 18px;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 42px;
+    display: block;
+    width: 100%; }
+  .button.secondary {
+    background-color: initial;
+    color: #4d5f7a; }
+    .button.secondary:hover {
+      box-shadow: inset 0px 0px 0px 1px #ced2db;
+      background-color: white; }
+    .button.secondary.pressed {
+      background-color: #e1e5eb;
+      box-shadow: inset 0px 0px 0px 1px #ced2db, inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.2); }
+  .button.tetriary {
+    background-color: #0095ff; }
+    .button.tetriary:hover:not(.pressed) {
+      background-color: #32aaff;
+      box-shadow: inset 0px -2px 0px 0px #0086e5; }
+    .button.tetriary.pressed {
+      background-color: #0086e5;
+      box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.2); }
+  .button.additive {
+    background-color: #15bf81; }
+    .button.additive:hover:not(.pressed) {
+      background-color: #43cb9a;
+      box-shadow: inset 0px -2px 0px 0px #12ab74; }
+    .button.additive.pressed {
+      background-color: #12ab74;
+      box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.2); }
+  .button.destructive {
+    background-color: #ff6666; }
+    .button.destructive:hover:not(.pressed) {
+      background-color: #ff7575;
+      box-shadow: inset 0px -2px 0px 0px #cc5151; }
+    .button.destructive.pressed {
+      background-color: #cc5151;
+      box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.2); }
+
+.dropdown {
+  position: relative;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 100;
+  color: #4d5f7a;
+  cursor: pointer;
+  font-family: sans-serif; }
+  .dropdown button {
+    background-color: white;
+    box-shadow: inset 0px 0px 0px 1px #ced2db;
+    height: 42px;
+    width: 200px;
+    border: none;
+    border-radius: 3px;
+    padding: 0px 15px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    outline: none; }
+  .dropdown:hover button {
+    box-shadow: inset 0px 0px 0px 1px #848ea1; }
+  .dropdown .menu {
+    box-shadow: 0px 19px 38px 0px rgba(0, 0, 0, 0.3), 0px 15px 12px 0px rgba(0, 0, 0, 0.22);
+    background-color: white;
+    position: absolute;
+    padding: 5px 0px;
+    width: 200px;
+    top: 47px;
+    border-radius: 3px; }
+    .dropdown .menu li {
+      padding: 0px 15px;
+      text-overflow: ellipsis;
+      line-height: 42px;
+      cursor: pointer; }
+      .dropdown .menu li:hover {
+        background-color: #e1e5eb; }
+
+.form-modal {
+  width: 320px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: white; }
+  .form-modal input {
+    margin-top: 42px; }
+  .form-modal button {
+    margin-top: 42px; }
+  .form-modal h2 {
+    font-size: 2em; }
+
+body h1 {
+  line-height: 42px;
+  font-size: 36px;
+  font-family: sans-serif;
+  font-weight: 100;
+  float: left;
+  color: #848ea1; }
+
+body h3 {
+  line-height: 18px;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: #4d5f7a;
+  text-decoration: underline; }
+
+.hero {
+  width: 900px;
+  height: 350px;
+  display: block;
+  box-shadow: inset 0px -1px 0px 0px #ced2db, inset 0px 1px 1px 0px white;
+  border-radius: 2px;
+  background-image: url("http://i.ytimg.com/vi/-WpK3azYSYk/maxresdefault.jpg");
+  background-position-y: -115px;
+  background-size: cover; }
+
+.input {
+  outline: none;
+  padding: 0 5px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 3px;
+  width: 200px;
+  box-shadow: inset 0px 0px 0px 1px #ced2db; }
+  .input:focus {
+    box-shadow: inset 0px 0px 0px 1px #0095ff; }
+  .input:hover:not(:focus) {
+    box-shadow: inset 0px 0px 0px 1px #848ea1; }
+
+.lightbox-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10; }
+
+.lightbox-content {
+  display: inline-block;
+  position: relative;
+  font-size: 14px; }
+  .lightbox-content .lightbox-close {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 17px;
+    right: 17px;
+    display: inline-block;
+    background-color: red; }
+
+.modal {
+  width: 1000px;
+  height: 650px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: inset 0px 1px 0px 1px #ced2db; }
+  .modal .footer {
+    padding: 5px;
+    width: 990px;
+    box-shadow: inset 0px 1px 0px 0px #ced2db;
+    position: absolute;
+    bottom: 0; }
+
+.project-panel {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.24), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+  width: 215px;
+  margin: 0 auto 5px auto;
+  position: relative;
+  border-radius: 3px; }
+  .project-panel .profile {
+    height: 215px;
+    width: 100%;
+    display: inline-block; }
+  .project-panel .footer {
+    line-height: 14px;
+    font-size: 11px;
+    color: #4d5f7a;
+    text-align: center;
+    background-color: #edf0f5; }
+
+.radioButton label {
+  padding: 0px 12px 0px 5px;
+  color: #4d5f7a;
+  font-family: sans-serif;
+  font-size: 11px;
+  line-height: 32px;
+  cursor: pointer; }
+
+.app {
+  padding-left: 52px; }
+  .app .sidebar {
+    width: 52px;
+    height: 100%;
+    margin-left: -52px;
+    box-shadow: inset -1px 0px 0px 0px #ced2db;
+    position: absolute; }
+  .app .container {
+    display: table;
+    margin: 0 auto;
+    padding-top: 15px;
+    max-width: 900px;
+    position: relative; }
+
+.materialTable {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.24), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  white-space: nowrap;
+  text-align: left;
+  font-family: sans-serif; }
+  .materialTable thead {
+    background-color: #edf0f5; }
+    .materialTable thead tr {
+      line-height: 24px;
+      color: #848ea1; }
+  .materialTable tbody tr {
+    height: 42px;
+    line-height: 42px;
+    cursor: pointer; }
+    .materialTable tbody tr:hover {
+      background-color: #e1e5eb; }
+  .materialTable th, .materialTable td {
+    display: table-cell;
+    width: auto;
+    border-bottom: 1px solid #e5e5e5; }
+    .materialTable th:first-child, .materialTable td:first-child {
+      padding-left: 24px; }
+    .materialTable th:last-child, .materialTable td:last-child {
+      padding-right: 24px; }
+    .materialTable th.edge.data, .materialTable td.edge.data {
+      padding-right: 24px; }
+    .materialTable th.right.data, .materialTable td.right.data {
+      padding-right: 38px;
+      text-align: right; }
+  .materialTable th {
+    font-size: 11px; }
+  .materialTable td {
+    font-weight: 400; }
+    .materialTable td.data {
+      font-weight: 100;
+      font-size: 12px;
+      color: #848ea1; }
+
+.top-bar {
+  height: 42px;
+  box-shadow: inset 0px -1px 0px 0px #ced2db;
+  position: relative;
+  padding: 5px; }
+  .top-bar .icon {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    background-color: #ced2db; }
+
+.tray {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  .tray:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .tray.pads {
+    padding: 5px; }
+
+
+body {
+  font-family: sans-serif;
+  font-size: 12px; }
+
+.trendingItems {
+  color: #4d5f7a;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 100; }
+  .trendingItems li {
+    line-height: 24px; }
+    .trendingItems li:hover {
+      color: #0095ff; }
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, i, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section,
+input, select, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+ul li {
+  list-style-type: none; }
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.5; }
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+table, td, th {
+  vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img {
+  border: none; }
