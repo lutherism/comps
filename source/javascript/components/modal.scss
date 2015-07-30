@@ -10,11 +10,20 @@
   background-color: white;
   box-shadow: inset 0px 1px 0px 1px $borderGrey;
 
+  .modalContent {
+    height: 600px;
+    overflow: auto
+  }
+
   .footer {
     padding: 5px;
     width: 990px;
     box-shadow: inset 0px 1px 0px 0px $borderGrey;
-    position: absolute;
-    bottom: 0;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
   }
 }

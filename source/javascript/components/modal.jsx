@@ -4,7 +4,9 @@ var Modal = React.createClass({
   render: function() {
     return (
       <div className="modal">
-        {this.props.children}
+        <div className="modalContent">
+          {this.props.children}
+        </div>
         <div className="footer">
           {this.props.footerEls}
         </div>
