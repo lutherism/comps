@@ -11,3 +11,4 @@ module.exports.Checkbox = require('./components/checkbox.jsx');
 module.exports.Radio = require('./components/radio.jsx');
 module.exports.Dropdown = require('./components/dropdown.jsx');
 module.exports.ProjectPanel = require('./components/project-panel.jsx');
+module.exports.TextArea = require('./components/textarea.jsx');
