@@ -22,7 +22,7 @@ var Dropdown = React.createClass({
             <i className="fa fa-chevron-up" /> :
             <i className="fa fa-chevron-down" />}
         </button>
-        
+
         {this.state.open ? this.renderMenu() : null}
       </div>
     );
@@ -46,6 +46,7 @@ var Dropdown = React.createClass({
     }
   },
   handleOpen: function(e) {
+    this.props.clickHandler && this.props.clickHandler(e);
     this.setState({open: !this.state.open});
   }
 });

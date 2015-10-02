@@ -5,7 +5,7 @@ var Checkbox = React.createClass({
     return (
       <span className="checkbox">
         <input type="checkbox"
-          value={this.props.value}
+          checked={this.props.value === "true" || this.props.value === true}
           onChange={this.props.onChange} />
         <span className="overlay" />
         <label>{this.props.text}</label>

@@ -1,6 +1,6 @@
 var React = require('react');
 
-Tray = React.createClass({
+var Tray = React.createClass({
   render: function() {
     return (
       <div className={"tray " + (this.props.pads ? "pads": null)} style={this.props.style}>
