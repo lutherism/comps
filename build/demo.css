@@ -189,7 +189,6 @@ body h3 {
 
 .modal {
   width: 1000px;
-  height: 650px;
   border-radius: 4px;
   position: relative;
   overflow: hidden;
@@ -285,6 +284,23 @@ body h3 {
       font-weight: 100;
       font-size: 12px;
       color: #848ea1; }
+
+.text-area {
+  outline: none;
+  padding: 0 5px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 3px;
+  width: 200px;
+  box-shadow: inset 0px 0px 0px 1px #ced2db; }
+  .text-area:focus {
+    box-shadow: inset 0px 0px 0px 1px #0095ff; }
+  .text-area:hover:not(:focus) {
+    box-shadow: inset 0px 0px 0px 1px #848ea1; }
 
 .top-bar {
   height: 42px;
