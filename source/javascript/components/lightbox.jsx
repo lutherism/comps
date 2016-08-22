@@ -1,5 +1,5 @@
 var React = require('react');
-var ReactDOM = require('reactDOM');
+var ReactDOM = require('react-dom');
 
 var Lightbox = React.createClass({
   propTypes:  {
