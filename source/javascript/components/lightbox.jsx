@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('reactDOM');
 
 var Lightbox = React.createClass({
   propTypes:  {
@@ -104,7 +105,7 @@ var Lightbox = React.createClass({
   },
 
   getContentSize: function getContentSize() {
-    var contentDOM = this.refs.content.getDOMNode().firstChild;
+    var contentDOM = ReactDOM.findDOMNode(this.refs.content).firstChild;
 
     return {
       contentWidth: contentDOM.clientWidth,
