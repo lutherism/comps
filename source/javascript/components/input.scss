@@ -11,11 +11,11 @@
   border: none;
   border-radius: 3px;
   width: 200px;
-  box-shadow: inset 0px 0px 0px 2px $borderGrey;
+  box-shadow: inset 0px 0px 0px 1px $borderGrey;
   &:focus {
-    box-shadow: inset 0px 0px 0px 3px $linkBlue;
+    box-shadow: inset 0px 0px 0px 2px $linkBlue;
   }
   &:hover:not(:focus) {
-    box-shadow: inset 0px 0px 0px 2px $grey5;
+    box-shadow: inset 0px 0px 0px 1px $grey5;
   }
 }
