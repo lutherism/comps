@@ -6,7 +6,7 @@ var TopBar = React.createClass({
       <div className="top-bar">
         {this.renderIcon()}
         {this.props.leftSide}
-        <div style={{float: "right"}}>
+        <div className="right-actions">
           {this.props.rightSide}
         </div>
       </div>

@@ -43,15 +43,15 @@
     @include layer3Shadow();
     background-color: white;
     position: absolute;
-    padding: 5px 0px;
+    padding: 4px 0px;
     width: 200px;
-    top: 43px;
+    top: 40px;
     border-radius: 3px;
 
     li {
-      padding: 0px 15px;
+      padding: 0px 16px;
       text-overflow: ellipsis;
-      line-height: 42px;
+      line-height: 36px;
       cursor: pointer;
       &:hover {
         background-color: $grey2;
