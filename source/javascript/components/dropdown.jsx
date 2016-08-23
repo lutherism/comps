@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDom = require('react-dom');
 
 var Dropdown = React.createClass({
   getInitialState: function() {
@@ -39,7 +40,7 @@ var Dropdown = React.createClass({
   },
   closeIfOutside: function(e) {
     if (!this.state.open) return;
-    var thisNode = React.findDOMNode(this);
+    var thisNode = ReactDOM.findDOMNode(this);
     if (e.target && !(e.target === thisNode || thisNode.contains(e.target))) {
       this.setState({open: false});
     }
