@@ -19,8 +19,8 @@
   }
   tbody {
     tr {
-      height: 42px;
-      line-height: 42px;
+      height: 48px;
+      line-height: 48px;
       cursor: pointer;
       &:hover {
         background-color: $grey2;
@@ -45,7 +45,7 @@
       padding-right: 24px;
     }
     &.right.data {
-      padding-right: 38px;
+      padding-right: 36px;
       text-align: right;
     }
   }
@@ -58,7 +58,7 @@
     font-weight: 400;
     &.data {
       font-weight: 100;
-      font-size: 12px;
+      font-size: 1.7em;
       color: $grey5;
     }
   }

@@ -2,20 +2,20 @@
 
 .input {
   outline: none;
-  padding: 0 5px;
-  height: 38px;
-  line-height: 38px;
-  font-size: 14px;
+  padding: 0 4px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 1em;
   font-weight: 100;
   font-family: sans-serif;
   border: none;
   border-radius: 3px;
   width: 200px;
-  box-shadow: inset 0px 0px 0px 1px $borderGrey;
+  box-shadow: inset 0px 0px 0px 2px $borderGrey;
   &:focus {
-    box-shadow: inset 0px 0px 0px 1px $linkBlue;
+    box-shadow: inset 0px 0px 0px 3px $linkBlue;
   }
   &:hover:not(:focus) {
-    box-shadow: inset 0px 0px 0px 1px $grey5;
+    box-shadow: inset 0px 0px 0px 2px $grey5;
   }
 }

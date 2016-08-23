@@ -3,7 +3,7 @@
 
 .dropdown {
   position: relative;
-  font-size: 14px;
+  font-size: 1em;
   text-align: left;
   font-weight: 100;
   color: $textBlue;
@@ -12,20 +12,20 @@
 
   button {
     background-color: white;
-    box-shadow: inset 0px 0px 0px 1px $borderGrey;
-    height: 38px;
+    box-shadow: inset 0px 0px 0px 2px $borderGrey;
+    height: 36px;
     width: 200px;
     border: none;
     border-radius: 3px;
-    padding: 0px 15px;
+    padding: 0px 16px;
     cursor: pointer;
     text-align: left;
-    font-size: 14px;
+    font-size: 1em;
     outline: none;
 
     i {
       position: absolute;
-      right: 10px;
+      right: 8px;
       color: $borderGrey;
     }
   }

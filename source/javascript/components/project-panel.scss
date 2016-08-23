@@ -4,7 +4,7 @@
 .project-panel {
   @include layer1Shadow();
   width: 215px;
-  margin: 0 auto 5px auto;
+  margin: 0 auto 8px auto;
   position: relative;
   border-radius: 3px;
 
@@ -15,7 +15,7 @@
   }
 
   .footer {
-    line-height: 14px;
+    line-height: 16px;
     font-size: 11px;
     color: $textBlue;
     text-align: center;
