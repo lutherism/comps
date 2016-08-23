@@ -1,7 +1,7 @@
 @import '../../stylesheets/colors';
 
 .hero {
-  width: 900px;
+  min-width: 900px;
   height: 352px;
   display: block;
   box-shadow: inset 0px -1px 0px 0px $borderGrey,
